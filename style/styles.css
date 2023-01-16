@@ -1,0 +1,317 @@
+/* common styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin:0;
+}
+.section-title{
+    font-size: 45px;
+    color: #131313;
+}
+.section-info{
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+/* Styles for nav and banners */
+header{
+    background-color:  rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px 220px 0 208px;
+    margin-bottom: 62px;
+}
+nav ul {
+    display: flex;
+    gap:60px;
+}
+nav ul li{
+    list-style-type: none;
+}
+
+.banner{
+    text-align: center;
+}
+.banner-title{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.btn-explore{
+    background-color:#FF900E;
+    color:#ffff;
+    padding:21px 24px 20px 25px;
+    border-style:none;
+    border-radius: 5px;
+}
+.banner div{
+    margin-bottom:30px;
+}
+.banner img{
+    width:1440px;
+    padding: 0 220px 25px 220px;
+}
+/* Styles for features */
+    .features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:73px;
+        margin:85px 301px 130px 301px;
+        
+
+    }
+    .images{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+    }
+    .images img{
+        width: 225px;
+        height: 225px;
+    }
+    .sl-text{
+        color:#727272
+    }
+    .or-text{
+        color: #FF900E;
+    }
+    /* enjoyable features of us */
+    .blogs{
+        display:flex;
+        justify-content: center;
+        margin:0 301px 130px 301px;
+        gap:40px;
+    }
+    .blogs img{
+        width:650px;
+        border-radius: 8px;
+    }
+    .border-title{
+        border-left: 5px solid #FF900E;
+        padding-left:20px;
+        margin-bottom: 24px;  
+    }
+    .blog{
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        margin-bottom:15px;
+        padding:30px 30px 40px 33px;
+    }
+    .blog-heading{
+        font-size: 20px;
+        color:#131313;
+        margin-bottom: 10px;
+    }
+    .blog-description{
+        font-size: 16px;
+        color:#727272;
+    }
+    .architect{
+        position: relative;
+    }
+    .btn{
+        position: absolute;
+        bottom:110px;
+        left: 0;
+    }
+    .btn-text-1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .btn-text-2{
+        font-size: 20px;
+    }
+    /* styles for facts */
+    .facts{
+        margin:85px 301px 130px 301px;
+    }
+    .fact{
+        text-align: center;
+        padding:45px 35px 60px 35px;
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        width:240px;
+
+        transition: width 1s, height 1s, transform 1s ;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+    }
+    .fact:hover{
+        
+        width: 500px;
+        height: 200px;
+    }
+    .fact-images{
+        display:flex;
+        gap:100px;
+        margin-left: 80px;
+    }
+    .fact-title{
+        margin-bottom:14px;
+    }
+    .fact-info{
+        margin-bottom: 100px;
+    }
+    .fact-number{
+        font-size: 40px;
+    }
+    .fact-des{
+        font-size:#727272;
+    }
+    /* Sponsors style  */
+.sponsors{
+    margin:85px 301px 130px 301px;
+}
+.sponsors-info{
+    text-align: center;
+}
+.sp-title{
+    margin-bottom:24px;
+}
+.sp-info{
+    margin-bottom: 50px;
+}
+.sponsors-image{
+    display: flex;
+    justify-content: center;
+    gap:150px;
+}
+.sponsor img{
+    width:100px;
+    height: 50px;
+}
+/* sponsors transition */
+
+/* footer style */
+.footer{
+    text-align: center;
+    background-color: #FFF4E7;
+    color: #424242;
+    font-size: 18px;
+    padding:40px 410px 38px 410px;
+    margin:85px 301px 130px 301px ;
+}
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+    .section-title{
+        margin-bottom:15px;
+        font-size: 35px;
+    }
+    nav{
+        flex-direction: column;
+        justify-content:center;
+    }
+    nav ul{
+        flex-direction: column;
+        gap:10px;
+        font-size: 25px;
+    }  
+    .banner{
+        text-align: left;
+    }
+    .banner-title{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .banner img{
+        width:100%;
+        padding:0;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        margin:20px 0 20px 0;
+    }
+    .blogs{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0;
+        gap:40px;
+    }
+    .blogs img{
+        width:100%;
+        border-radius: 8px;
+    }
+    .architect{
+        position: relative;
+    }
+    .btn{
+        position: absolute;
+        bottom:-110px;
+        left: 150px;
+    }
+    .btn-text-1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .btn-text-2{
+        font-size: 18px;
+    }
+    .facts{
+        margin:130px 0 0 10px;
+        width:100%;
+    }
+    .fact{
+        text-align: center;
+        padding:45px 35px 60px 35px;
+        border: 1px solid #FF900E;
+        border-radius: 8px;
+        width:200px; 
+
+        transition: width 1s, height 1s, transform 1s ;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+    }
+    .fact:hover{
+        
+        width: 100%;
+        height: 200px;
+    }
+    .fact-images{
+        display:flex;
+        flex-direction: column;
+        gap:80px;
+        margin-left:20px;
+    }
+    .sponsors{
+        margin:50px 0 10px 30px;
+    }
+    .sponsors-info{
+        text-align: left;
+    }
+    .sp-title{
+        margin-bottom:24px;
+    }
+    .sp-info{
+        margin-bottom: 50px;
+    }
+    .sponsors-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:50px;
+    }
+    .sponsor img{
+        width:90px;
+        height: 50px;
+    }
+    .footer{
+        text-align: center;
+        background-color: #FFF4E7;
+        color: #424242;
+        font-size: 18px;
+        padding:0px;
+        margin:50px 0 0 0px ;
+    }
+}
